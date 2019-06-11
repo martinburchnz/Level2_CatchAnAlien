@@ -33,5 +33,18 @@ namespace ClickAnAlien
         {
             pnlGame.Invalidate();
         }
+
+        private void pnlGame_MouseDown(object sender, MouseEventArgs e)
+        {
+            int diffX = e.X - alien.alienRec.X;
+            int diffY = e.Y - alien.alienRec.Y;
+            double length = Math.Sqrt(Math.Pow(diffX, 2) + Math.Pow(diffY, 2));
+            if (length < 70)
+            {
+                score++;//add 1 to the score
+                lblScore.Text = score.ToString();// display the score
+            }
+
+        }
     }
 }
