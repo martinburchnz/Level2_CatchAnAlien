@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlGame = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuStart = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuQuit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmrAlien = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,6 +122,11 @@
             this.mnuQuit.Size = new System.Drawing.Size(42, 20);
             this.mnuQuit.Text = "Quit";
             // 
+            // tmrAlien
+            // 
+            this.tmrAlien.Enabled = true;
+            this.tmrAlien.Tick += new System.EventHandler(this.tmrAlien_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,6 +160,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuStart;
         private System.Windows.Forms.ToolStripMenuItem mnuQuit;
+        private System.Windows.Forms.Timer tmrAlien;
     }
 }
 

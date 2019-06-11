@@ -33,6 +33,13 @@ namespace ClickAnAlien
             g.DrawImage(alien, alienRec);
 
         }
+        public void moveAlien()
+        {
+            x += xSpeed;
+            y += ySpeed;
+            alienRec.Location = new Point(x, y);
+        }
+
 
     }
 }
