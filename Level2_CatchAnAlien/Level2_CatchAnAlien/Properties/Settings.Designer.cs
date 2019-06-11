@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Level2_CatchAnAlien.Properties
+namespace ClickAnAlien.Properties
 {
 
 

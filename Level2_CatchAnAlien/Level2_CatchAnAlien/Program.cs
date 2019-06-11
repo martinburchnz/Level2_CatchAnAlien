@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Level2_CatchAnAlien
+namespace ClickAnAlien
 {
     static class Program
     {

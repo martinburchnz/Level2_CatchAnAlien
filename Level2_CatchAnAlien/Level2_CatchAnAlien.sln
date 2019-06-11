@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level2_CatchAnAlien", "Level2_CatchAnAlien\Level2_CatchAnAlien.csproj", "{CAA4BFA8-C1B6-4A46-B0E0-7D4B32B3A611}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickAnAlien", "Level2_CatchAnAlien\ClickAnAlien.csproj", "{CAA4BFA8-C1B6-4A46-B0E0-7D4B32B3A611}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

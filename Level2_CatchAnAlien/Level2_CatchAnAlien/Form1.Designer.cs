@@ -1,4 +1,4 @@
-﻿namespace Level2_CatchAnAlien
+﻿namespace ClickAnAlien
 {
     partial class Form1
     {
@@ -34,6 +34,10 @@
             this.lblScore = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuStart = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuQuit = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlGame
@@ -43,6 +47,7 @@
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(300, 300);
             this.pnlGame.TabIndex = 0;
+            this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
             // 
             // label1
             // 
@@ -92,6 +97,29 @@
             this.lblTime.Size = new System.Drawing.Size(60, 30);
             this.lblTime.TabIndex = 5;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuStart,
+            this.mnuQuit});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(484, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mnuStart
+            // 
+            this.mnuStart.Name = "mnuStart";
+            this.mnuStart.Size = new System.Drawing.Size(43, 20);
+            this.mnuStart.Text = "Start";
+            // 
+            // mnuQuit
+            // 
+            this.mnuQuit.Name = "mnuQuit";
+            this.mnuQuit.Size = new System.Drawing.Size(42, 20);
+            this.mnuQuit.Text = "Quit";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -103,8 +131,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlGame);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Catch the Alien";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,6 +150,9 @@
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mnuStart;
+        private System.Windows.Forms.ToolStripMenuItem mnuQuit;
     }
 }
 
