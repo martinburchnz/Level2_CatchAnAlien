@@ -26,6 +26,7 @@ namespace ClickAnAlien
             g = e.Graphics;// sets g to the Graphics object supplied in the PaintEventArgs
             alien.drawAlien(g); // draw the alien on the panel (pnlGame)
             alien.moveAlien();
+            alien.collideWall();//check whether alien hits pnlGame's walls
         }
 
         private void tmrAlien_Tick(object sender, EventArgs e)

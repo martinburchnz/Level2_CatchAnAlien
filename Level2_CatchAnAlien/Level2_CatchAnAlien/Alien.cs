@@ -39,6 +39,19 @@ namespace ClickAnAlien
             y += ySpeed;
             alienRec.Location = new Point(x, y);
         }
+        public void collideWall()
+        {
+            // check for alien hitting left and right walls
+            if (alienRec.X < 10 || alienRec.X > 235)
+            {
+                xSpeed *= -1; //change direction of alien
+            }
+            // check for alien hitting top and bottom of game area
+            if (alienRec.Y < 10 || alienRec.Y > 230)
+            {
+                ySpeed *= -1;//change direction of alien
+            }
+        }
 
 
     }
