@@ -44,7 +44,7 @@
             // 
             // pnlGame
             // 
-            this.pnlGame.BackColor = System.Drawing.Color.GreenYellow;
+            this.pnlGame.BackColor = System.Drawing.Color.Yellow;
             this.pnlGame.Location = new System.Drawing.Point(30, 140);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(300, 300);
